@@ -12,4 +12,5 @@ def combine_data(df_contracts, df_customers):
     df_contracts.set_index('customer_id', inplace=True)
     df = df_contracts.join(df_customers, how='left')
     
+
     return df
